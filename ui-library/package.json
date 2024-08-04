@@ -1,8 +1,15 @@
 {
   "name": "ui-library",
   "version": "0.1.0",
-  "private": true,
-  "dependencies": {
+  "description": "A reusable Button component",
+  "private": false,
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "files": [
+    "dist",
+    "src"
+  ],
+    "dependencies": {
     "@testing-library/jest-dom": "^5.17.0",
     "@testing-library/react": "^13.4.0",
     "@testing-library/user-event": "^13.5.0",
@@ -22,7 +29,8 @@
     "test": "react-scripts test",
     "eject": "react-scripts eject",
     "storybook": "storybook dev -p 6006",
-    "build-storybook": "storybook build"
+    "build-storybook": "storybook build",
+    "build-lib": "tsc"
   },
   "eslintConfig": {
     "extends": [
