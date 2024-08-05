@@ -1,6 +1,6 @@
 import React from 'react';
 import PropTypes from 'prop-types';
-import './Button.module.css';
+import './Button.css';
 
 export interface ButtonProps {
   onClick?: () => void;
@@ -12,12 +12,12 @@ export interface ButtonProps {
 
 const Button: React.FC<ButtonProps> = ({
   onClick,
-  primary = false,
+  primary = true,
   label,
   backgroundColor,
   size = 'medium',
 }) => {
-  const mode = primary ? 'button--primary' : 'button--secondary';
+  const mode = primary ? 'primary' : 'secondary';
   const styles = {
     backgroundColor,
   };
@@ -25,7 +25,7 @@ const Button: React.FC<ButtonProps> = ({
   return (
     <button
       type="button"
-      className={`button ${mode} button--${size}`}
+      className={`btn ${mode} ${size}`}
       style={styles}
       onClick={onClick}
     >

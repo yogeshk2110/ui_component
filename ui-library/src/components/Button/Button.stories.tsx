@@ -33,7 +33,6 @@ Primary.args = {
   primary: true,
   size: 'medium',
   label: 'Primary Button',
-  backgroundColor:'red'
 };
 
 export const Secondary = Template.bind({});

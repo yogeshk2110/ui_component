@@ -11,14 +11,14 @@ var __assign = (this && this.__assign) || function () {
 };
 import { jsx as _jsx } from "react/jsx-runtime";
 import PropTypes from 'prop-types';
-import './Button.module.css';
+import './Button.css';
 var Button = function (_a) {
-    var onClick = _a.onClick, _b = _a.primary, primary = _b === void 0 ? false : _b, label = _a.label, backgroundColor = _a.backgroundColor, _c = _a.size, size = _c === void 0 ? 'medium' : _c;
-    var mode = primary ? 'button--primary' : 'button--secondary';
+    var onClick = _a.onClick, _b = _a.primary, primary = _b === void 0 ? true : _b, label = _a.label, backgroundColor = _a.backgroundColor, _c = _a.size, size = _c === void 0 ? 'medium' : _c;
+    var mode = primary ? 'primary' : 'secondary';
     var styles = {
         backgroundColor: backgroundColor,
     };
-    return (_jsx("button", __assign({ type: "button", className: "button ".concat(mode, " button--").concat(size), style: styles, onClick: onClick }, { children: label })));
+    return (_jsx("button", __assign({ type: "button", className: "btn ".concat(mode, " ").concat(size), style: styles, onClick: onClick }, { children: label })));
 };
 Button.propTypes = {
     onClick: PropTypes.func,
