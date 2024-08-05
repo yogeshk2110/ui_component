@@ -1,6 +1,6 @@
 {
   "name": "ui-library-demo-yk",
-  "version": "0.1.5",
+  "version": "0.1.6",
   "description": "A reusable Button component",
   "private": false,
   "main": "dist/index.js",
