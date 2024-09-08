@@ -1,0 +1,135 @@
+.button {
+    font-family: 'Roboto Medium', sans-serif;
+    border-radius: 8px;
+    display: inline-flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 10px;
+    cursor: pointer;
+  
+    &.with-trailing-icon {
+      min-width: 180px; // Apply min-width only when iconTrailing is present
+    }
+  
+    .content {
+      display: flex;
+      width: 100%;
+      align-items: center;
+  
+      .centered-content {
+        display: flex;
+        flex-grow: 1;
+        justify-content: center; // Keep label and iconLeading centered
+      }
+    }
+  
+    &.large {
+      height: 56px;
+      font-size: 18px;
+      padding: 16px 20px;
+      max-width: 320px;
+    }
+  
+    &.medium {
+      height: 48px;
+      font-size: 16px;
+      padding: 14px 16px;
+      max-width: 240px;
+    }
+  
+    &.small {
+      height: 36px;
+      font-size: 14px;
+      padding: 10px 12px;
+      max-width: 180px;
+    }
+  
+    &.primary {
+      background-color: #2F80ED;
+      color: white;
+      border: none;
+  
+      &.disabled {
+        background-color: #e0e0e0;
+        color: #A6A6A6;
+        cursor: not-allowed;
+      }
+  
+      &.disabled-2 {
+        background-color: rgba(47, 128, 237, 0.4); // 40% opacity of primary button
+        color: #FFFFFF;
+        cursor: not-allowed;
+      }
+  
+      &.pressed {
+        background-color: #2F80ED;
+        box-shadow: inset 0px 2px 4px rgba(0, 0, 0, 0.25);
+      }
+    }
+  
+    &.secondary {
+      background-color: transparent;
+      color: #333333;
+      border: 1px solid #333333;
+  
+      &.disabled {
+        background-color: transparent;
+        border: 1px solid #A6A6A6;
+        color: #A6A6A6;
+        cursor: not-allowed;
+      }
+  
+      &.pressed {
+        background-color: #d5d5d5;
+        box-shadow: inset 0px 2px 4px rgba(0, 0, 0, 0.25);
+        color: #000000;
+        cursor: pointer;
+        border: none;
+      }
+    }
+  
+    &.tertiary {
+      background-color: transparent;
+      color: #000000;
+      border: none;
+  
+      &.disabled {
+        background-color: transparent;
+        color: #A6A6A6;
+        cursor: not-allowed;
+      }
+  
+      &.pressed {
+        background-color: #f5f5f5;
+        box-shadow: inset 0px 2px 4px rgba(0, 0, 0, 0.25);
+      }
+    }
+  
+    .icon {
+      &.leading {
+        margin-right: 8px;
+      }
+  
+      &.trailing {
+        margin-left: auto;
+        margin-right: 0; // Ensure this stays aligned to the right
+      }
+  
+      &.large {
+        font-size: 24px; // Icon size for large buttons
+        width: 24px;
+        height: 24px;
+      }
+  
+      &.medium {
+        font-size: 20px; // Icon size for medium buttons
+        width: 20px;
+        height: 20px;
+      }
+  
+      &.small {
+        display: none; // No icon for small buttons
+      }
+    }
+  }
+  

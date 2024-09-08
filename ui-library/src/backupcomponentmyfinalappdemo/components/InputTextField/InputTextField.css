@@ -1,0 +1,169 @@
+.input-text-field-container {
+    margin-bottom: 8px;
+    font-family: 'Roboto', sans-serif;
+}
+
+.input-label {
+    display: block;
+    margin-bottom: 4px;
+    font-weight: 500;
+    color: #000;
+}
+
+.input-wrapper {
+    position: relative;
+    display: flex;
+    align-items: center;
+}
+
+.input-text-field {
+    width: 100%;
+    padding: 0 16px;
+    border-radius: 8px;
+    font-weight: 400;
+    outline: none;
+    background-color: #E8E8E8;
+    border: 1px solid transparent;
+    box-sizing: border-box;
+}
+
+.input-text-field::placeholder {
+    color: #828282; 
+    opacity: 1;
+}
+
+/* Size variations */
+.input-text-field-container.large .input-text-field {
+    height: 56px;
+    font-size: 18px;
+}
+
+.input-text-field-container.medium .input-text-field {
+    height: 48px;
+    font-size: 16px;
+}
+
+.input-text-field-container.small .input-text-field {
+    height: 36px;
+    font-size: 14px;
+}
+
+/* default state */
+.input-text-field.default {
+    background-color: #E8E8E8;
+    /* border: none; */
+    border: 1px solid transparent;
+}
+
+/* Active state */
+.input-text-field.active {
+    border: 1px solid black;
+    background-color: white;
+}
+
+/* Error state */
+.input-text-field.error {
+    border: 1px solid #e74c3c !important;
+}
+
+.error-message {
+    margin-top: 4px;
+    font-size: 14px;
+    display: flex;
+    align-items: center;
+    color: #e74c3c;
+}
+
+.error-icon {
+    margin-right: 4px; /* space between icon and message */
+    font-size: 14px; /* adjust size as needed */
+}
+
+/* Success state */
+.input-text-field.success {
+    border-color: #27ae60 !important;
+}
+
+.success-message {
+    margin-top: 4px;
+    display: flex;
+    font-size: 14px;
+    align-items: center;
+    color: green;
+}
+
+.success-icon {
+    margin-right: 4px; /* space between icon and message */
+    font-size: 14px; /* adjust size as needed */
+}
+
+/* Read-only state */
+.input-text-field.read-only {
+    background-color: #FFFFFF;
+    border:2px solid #E8E8E8;
+    color: #333333;
+}
+
+/* Disabled state */
+.input-text-field.disabled {
+    background-color: #F3F3F3;
+    color: #A6A6A6;
+    cursor: not-allowed;
+}
+
+/* Icon variant */
+.input-icon {
+    /* margin-right: 8px; */
+    position: absolute;
+    left: 8px;
+    display: flex;
+    align-items: center;
+}
+
+.input-icon.large {
+    font-size: 24px;
+}
+
+.input-icon.medium {
+    font-size: 20px;
+}
+
+
+/* Currency variant */
+.input-currency {
+    position: absolute;
+    right: 8px;
+    display: flex;
+    align-items: center;
+    color: #555;
+}
+
+.input-currency.large {
+    font-size: 18px;
+}
+
+.input-currency.medium {
+    font-size: 16px;
+}
+
+.input-currency.small {
+    font-size: 14px;
+}
+
+.password-toggle-icon {
+    position: absolute;
+    right: 8px;
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+}
+
+/* Adjust size for large input */
+.password-toggle-icon.large {
+    font-size: 24px; /* Set size for large input */
+}
+
+/* Adjust size for medium input */
+.password-toggle-icon.medium {
+    font-size: 20px; /* Set size for medium input */
+}

@@ -1,0 +1,136 @@
+.button {
+    font-family: 'Roboto Medium', sans-serif;
+    border-radius: 8px;
+    display: inline-flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 10px;
+    cursor: pointer;
+    /* min-width: 100px; */
+  }
+  .button.with-trailing-icon {
+    min-width: 180px; /* Apply min-width only when iconTrailing is present */
+  }
+  .content {
+    display: flex;
+    width: 100%;
+    align-items: center;
+  }
+  
+  .centered-content {
+    display: flex;
+    flex-grow: 1;
+    justify-content: center; /* This will keep the label and iconLeading centered */
+  }
+  
+  .button.large {
+    height: 56px;
+    font-size: 18px;
+    padding: 16px 20px;
+    max-width: 320px;
+  }
+  
+  .button.medium {
+    height: 48px;
+    font-size: 16px;
+    padding: 14px 16px;
+    max-width: 240px;
+  }
+  
+  .button.small {
+    height: 36px;
+    font-size: 14px;
+    padding: 10px 12px;
+    max-width: 180px;
+  }
+  
+  .button.primary {
+    background-color: #2F80ED;
+    color: white;
+    border: none;
+  }
+  
+  .button.secondary {
+    background-color: transparent;
+    color: #333333;
+    border: 1px solid #333333;
+  }
+  
+  .button.tertiary {
+    background-color: transparent;
+    color: #000000;
+    border: none;
+  }
+  
+  .button.disabled.primary {
+    background-color: #e0e0e0;
+    color: #A6A6A6;
+    border: none;
+    cursor: not-allowed;
+  }
+  
+  .button.disabled.secondary {
+    background-color: transparent;
+    border: 1px solid #A6A6A6;
+    color: #A6A6A6;
+    cursor: not-allowed;
+  }
+  
+  .button.disabled.tertiary {
+    background-color: transparent;
+    color: #A6A6A6;
+    cursor: not-allowed;
+  }
+  
+  .button .icon.leading {
+    margin-right: 8px;
+  }
+  
+  .button .icon.trailing {
+    margin-left: auto;
+    margin-right: 0; /* Ensure this stays aligned to the right */
+  }
+
+  /* Icon sizes */
+  .button.large .icon {
+    font-size: 24px; /* Icon size for large buttons */
+    width: 24px;
+    height: 24px;
+  }
+
+  .button.medium .icon {
+    font-size: 20px; /* Icon size for medium buttons */
+    width: 20px;
+    height: 20px;
+  }
+
+  .button.small .icon {
+    display: none; /* No icon for small buttons */
+  }
+  
+  /* Disabled -2 state (40% opacity of primary button) */
+  .button.disabled-2.primary {
+    background-color: rgba(47, 128, 237, 0.4); /* 40% opacity of primary button */
+    color: #FFFFFF;
+    cursor: not-allowed;
+  }
+  
+  /* Pressed state (with inner shadow) */
+  .button.pressed.primary {
+    background-color: #2F80ED;
+    box-shadow: inset 0px 2px 4px rgba(0, 0, 0, 0.25);
+  }
+  
+  .button.pressed.secondary {
+    background-color: #d5d5d5;
+    box-shadow: inset 0px 2px 4px rgba(0, 0, 0, 0.25);
+    color: #000000;
+    cursor: pointer;
+    border: none;
+  }
+  
+  .button.pressed.tertiary {
+    background-color: #f5f5f5;
+    box-shadow: inset 0px 2px 4px rgba(0, 0, 0, 0.25);
+  }
+  

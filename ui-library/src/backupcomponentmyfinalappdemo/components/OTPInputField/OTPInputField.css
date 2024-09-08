@@ -1,0 +1,84 @@
+.otp-input-field-container {
+    display: flex;
+    justify-content: space-between;
+    width: fit-content;
+    margin-bottom: 16px;
+    font-family: 'Roboto', sans-serif;
+}
+
+.otp-input-field {
+    width: 48px;
+    height: 48px;
+    text-align: center;
+    font-size: 18px;
+    border-radius: 8px;
+    border: 1px solid transparent;
+    background-color: #E8E8E8;
+    outline: none;
+    margin-right: 8px;
+}
+
+.otp-input-field:last-child {
+    margin-right: 0;
+}
+
+/* Default state */
+.otp-input-field.default {
+    background-color: #E8E8E8;
+    border: 1px solid transparent;
+}
+
+/* Active state */
+.otp-input-field.active {
+    border: 1px solid black;
+    background-color: white;
+}
+
+/* Error state */
+.otp-input-field.error {
+    border: 1px solid #e74c3c !important;
+}
+
+.error-message {
+    margin-top: 4px;
+    font-size: 14px;
+    display: flex;
+    align-items: center;
+    color: #e74c3c;
+}
+
+.error-icon {
+    margin-right: 4px;
+    font-size: 14px;
+}
+
+/* Success state */
+.otp-input-field.success {
+    border-color: #27ae60 !important;
+}
+
+.success-message {
+    margin-top: 4px;
+    display: flex;
+    font-size: 14px;
+    align-items: center;
+    color: green;
+}
+
+.success-icon {
+    margin-right: 4px;
+    font-size: 14px;
+}
+
+/* Read-only state */
+.otp-input-field.read-only {
+    background-color: #f0f0f0;
+    color: #999;
+}
+
+/* Disabled state */
+.otp-input-field.disabled {
+    background-color: #f0f0f0;
+    color: #999;
+    cursor: not-allowed;
+}

@@ -1,0 +1,116 @@
+$text-area-font-family: 'Roboto', sans-serif;
+$text-area-background-color: #E8E8E8;
+$text-area-border-color: transparent;
+$text-area-border-radius: 8px;
+$text-area-placeholder-color: #828282;
+
+$text-area-height-large: 88px;
+$text-area-height-medium: 80px;
+$text-area-height-small: 72px;
+
+$text-area-font-size-large: 18px;
+$text-area-font-size-medium: 16px;
+$text-area-font-size-small: 14px;
+
+$text-area-error-border: #e74c3c;
+$text-area-success-border: #27ae60;
+
+.text-area-container {
+  margin-bottom: 16px;
+  font-family: $text-area-font-family;
+
+  .text-area-label {
+    display: block;
+    margin-bottom: 4px;
+    font-weight: 500;
+    color: #000;
+  }
+}
+
+.text-area {
+  width: 100%;
+  padding: 16px;
+  border-radius: $text-area-border-radius;
+  font-weight: 400;
+  outline: none;
+  background-color: $text-area-background-color;
+  border: 1px solid $text-area-border-color;
+  resize: none;
+  box-sizing: border-box;
+
+  &::placeholder {
+    color: $text-area-placeholder-color;
+    opacity: 1;
+  }
+
+  &.default {
+    background-color: $text-area-background-color;
+    border: 1px solid $text-area-border-color;
+  }
+
+  &.active {
+    background-color: white;
+    border: 1px solid black;
+  }
+
+  &.error {
+    border: 1px solid $text-area-error-border !important;
+  }
+
+  &.success {
+    border: 1px solid $text-area-success-border;
+  }
+
+  &.read-only {
+    background-color: #FFFFFF;
+    border: 2px solid $text-area-background-color;
+    color: #5E5E5E;
+  }
+
+  &.disabled {
+    background-color: #F3F3F3;
+    color: #A6A6A6;
+    cursor: not-allowed;
+  }
+
+  &.container.large {
+    height: $text-area-height-large;
+    font-size: $text-area-font-size-large;
+  }
+
+  &.container.medium {
+    height: $text-area-height-medium;
+    font-size: $text-area-font-size-medium;
+  }
+
+  &.container.small {
+    height: $text-area-height-small;
+    font-size: $text-area-font-size-small;
+  }
+}
+
+.error-message {
+  margin-top: 4px;
+  font-size: 14px;
+  display: flex;
+  align-items: center;
+  color: $text-area-error-border;
+
+  .error-icon {
+    margin-right: 4px;
+    font-size: 14px;
+  }
+}
+
+.success-message {
+  margin-top: 4px;
+  display: flex;
+  font-size: 14px;
+  align-items: center;
+  color: #27ae60;
+
+  .success-icon {
+    margin-right: 4px;
+    font-size: 14px;
+  }
+}
